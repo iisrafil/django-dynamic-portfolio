@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+    body {
+      font-family: "Oswald";
+      font-weight: bold;
+    }
+
+
+
+
+
+
+    </style>
+    <title>Hello, world!</title>
+</head>
+<body class=" background text-light" style="background-color: #000000; font-weight:normal;">
+<nav class="navbar navbar-expand-sm navbar-dark sticky-top " style="background-color:#000000">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#home">Israfil</a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#resume">Resume <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#skill">My Skills <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#projects">My Projects <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#contact">Contact me <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="blog/">My Blog<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="carousel slide" data-ride="carousel" id="home">
+    <div class="carousel-inner">
+        <div class="carousel-item active" style="height:700px">
+            <img class="float-right " src="media/portfolio/images/bg_1.png" height="700px" width="auto">
+            <div class="card-img-overlay card-body text-left " style="padding-left: 100px; padding-top: 200px">
+                <span class="text-warning">Hello!</span>
+                <h1 class="">I'm <span class="text-warning">Israfil</span></h1>
+                <h2 class="">A Freelance Web Designer</h2>
+                <p><a href="#contact" class="btn btn-primary ">Hire me</a> <a href="#projects"
+                                                                              class="btn btn-dark btn-outline-white ">My
+                    works</a></p>
+            </div>
+        </div>
+        <div class="carousel-item " style="height:700px">
+            <img class="float-right" src="media/portfolio/images/bg_2.png" height="700px" width="auto">
+            <div class="card-img-overlay card-body text-left " style="padding-left: 100px; padding-top: 200px">
+                <span class="text-warning">Hello!</span>
+                <h1 class="">I'm a <span class="text-warning">web designer</span><br> based in Bangladesh</h1>
+                <p><a href="#contact" class="btn btn-primary ">Hire me</a> <a href="#projects"
+                                                                              class="btn btn-dark btn-outline-white ">My
+                    works</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<h2 class="text-center text-warning" style="padding-top:80px">About</h2><br>
+<div class="row" id="about">
+    <div class="col-md-6 d-flex">
+        <img class="float-left" src="media/portfolio/images/bg_1.png" height="600px" width="auto">
+    </div>
+    <div class="col-md-6 d-flex" style="font-size:25px ;padding-top:150px">
+
+
+        <ul class="" style="line-height: 1.8;word-spacing: 5px; text-indent: 15px;padding-left:-10px">
+            <li class="d-flex"><span>Name:</span> <span style="">Israfil Islam</span></li>
+            <li class="d-flex"><span>Date of birth: </span> <span style="">October 30, 1999</span></li>
+            <li class="d-flex"><span>Address:</span> <span style="">Mohakhali DOHS, Dhaka, Bangladesh</span></li>
+            <li class="d-flex"><span>Zip code:</span> <span style="">1206</span></li>
+            <li class="d-flex"><span>Email:</span> <span style="">contact@israfil.xyz</span></li>
+            <li class="d-flex"><span>Phone:</span> <span style="">+880 1783611280</span></li>
+        </ul>
+
+    </div>
+</div>
+<div id="resume">
+    <h1 class="text-center text-warning" style="padding-top: 100px;">Resume</h1>
+    <div class="row">
+        {%for resume in resumes%}
+        <div class="col-md-4 d-flex" style="padding:10px">
+            <div class="bg bg-dark" style="padding-left:20px;padding-top:20px">
+                <span class="text-warning">{{resume.year}}</span>
+
+                <h3 style="line-height: 1.8;">{{resume.degree}}</h3>
+                <br>
+                <p class="text-warning" style="font-weight: normal;line-height: 1.8;">{{resume.institute}}</p>
+
+                <p class="" style="font-weight: normal;line-height: 1.8;">{{resume.description}}</p>
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+</div>
+<div id="skill">
+    <h1 class="text-center text-warning" style="padding-top: 100px;">My Skills</h1>
+    <div class="row">
+        <div class="col-md-6 " style="padding:20px">
+            <div>
+                <h3 style="font-weight:normal;">Social Marketing</h3>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" style="width:60%;">60%</div>
+                </div>
+                <br>
+                <h3 style="font-weight:normal;">Django</h3>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" style="width:80%;">80%</div>
+                </div>
+                <br>
+                <h3 style="font-weight:normal;">Wordpress</h3>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" style="width:70%;">70%</div>
+                </div>
+                <br>
+            </div>
+        </div>
+        <div class="col-md-6 " style="padding:20px">
+            <div>
+                <h3 style="font-weight:normal;">HTML</h3>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" style="width:90%;">90%</div>
+                </div>
+                <br>
+                <h3 style="font-weight:normal;">CSS</h3>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" style="width:85%;">85%</div>
+                </div>
+                <br>
+                <h3 style="font-weight:normal;">jQuery</h3>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" style="width:55%;">55%</div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="projects">
+    <h1 class="text-center text-warning" style="padding-top: 100px;">My Projects</h1>
+    <div class="row">
+        {%for project in projects %}
+        <div class="card col-md-4" style="width:400px;">
+            <img class="card-img-top" src="{{project.image.url}}" alt="Card image">
+            <div class="card-body bg-dark">
+                <h4 class="card-title">{{project.title}}</h4>
+                <p class="card-text" style="font-weight:normal">{{project.description}}</p>
+                <a href="{{project.url}}" class="btn btn-primary">View Project</a>
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+</div>
+<div id="contact" >
+    <h1 class="text-center text-warning" style="padding: 100px;">Contact me</h1>
+    <div class="row d-flex contact-info mb-5" style="margin:20px;font-weight:normal">
+        <div class="col-md-6 col-lg-3 d-flex bg-dark ">
+            <div class="align-self-stretch box p-4 text-center">
+                <div class="fas d-flex align-items-center justify-content-center">
+                    <span class="fas fa-map-marked-alt"></span>
+                </div>
+                <h3 class="mb-4">Address</h3>
+                <p>375/a, Road 28, Mohakhali DOHS, Dhaka-1206</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex bg-dark">
+            <div class="align-self-stretch box p-4 text-center">
+                <div class="fas d-flex align-items-center justify-content-center">
+                    <span class="fas fa-phone-square"></span>
+                </div>
+                <h3 class="mb-4">Contact</h3>
+                <p><a href="tel://+8801783611280">+880 1783611280</a></p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex bg-dark">
+            <div class="align-self-stretch box p-4 text-center">
+                <div class="fas d-flex align-items-center justify-content-center">
+                    <span class="fas fa-envelope-open-text"></span>
+                </div>
+                <h3 class="mb-4">Email Address</h3>
+                <p><a href="mailto:contact@israfil.xyz">contact@israfil.xyz</a></p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex bg-dark">
+            <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="fas fa-globe"></span>
+                </div>
+                <h3 class="mb-4">Website</h3>
+                <p><a href="#">israfil.xyz</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p class="text-center" style="padding-top:20px">
+  Copyright &copy; All rights reserved <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="#" target="_blank">Israfil</a>
+  </p>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

@@ -2,13 +2,13 @@
 django-dynamic-portfolio 👋</h1>
 <p>
   
-  <a href="https://github.com/Kvaibhav01/Forkify-JS#readme" target="_blank">
+  <a >
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
-  <a href="https://github.com/Kvaibhav01/Forkify-JS/graphs/commit-activity" target="_blank">
+  <a >
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
-  <a href="https://github.com/Kvaibhav01/Forkify-JS/blob/master/LICENSE" target="_blank">
+  <a >
     <img alt="License: ISC" src="https://img.shields.io/github/license/Kvaibhav01/forkify" />
   </a>
  
@@ -21,7 +21,7 @@ django-dynamic-portfolio 👋</h1>
 # Clone secrets and fablib repositories
 
 ```sh
-git clone git@github.com:NUKnightLab/secrets.git
+git clone https://github.com/iisrafil/django-dynamic-portfolio.git
 ```
 
 # Change into project directory
